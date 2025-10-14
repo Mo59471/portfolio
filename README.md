@@ -6,7 +6,7 @@
 
 Detailed description (at least a paragraph, use ChatGPT)
 
-![Running Calculator]( )
+![Running Calculator](https://github.com/Mo59471/portfolio/blob/main/images/calc.png?raw=true)
 
 * [Windows EXE]()
 * [MacOSX]()
