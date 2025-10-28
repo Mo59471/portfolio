@@ -14,4 +14,4 @@ This project is an interactive graphical calculator programmed in Java using the
 * [MacOSX](https://github.com/Mo59471/portfolio/blob/main/src/Calculator/macos-aarch64.zip)
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/Calculator)
 
-![Calculator UML](https://github.com/Mo59471/portfolio/blob/main/images/CalculatorUML.jpg)
+![Calculator UML](https://github.com/Mo59471/portfolio/blob/main/images/CalculatorUML.jpg?raw=true)
