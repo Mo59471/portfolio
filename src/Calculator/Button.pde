@@ -52,9 +52,9 @@ class Button {
     }
     textAlign(CENTER, CENTER);
     textSize(s);
-    text(val, x-1, y-4);
+    text(val, x-1, y+1);
     fill(255);
-    text(val, x, y-5);
+    text(val, x, y);
   }
 
   void hover(int tempX, int tempY) {
