@@ -31,6 +31,9 @@ void setup () {
   buttons[6] = new Button(340, 500, 40, 40, 400, 400, 0, 30, "√", #565761, #3b3c42, #00daf7, #2d2e33);
   buttons[7] = new Button(280, 560, 40, 40, 400, 400, 0, 30, "^", #565761, #3b3c42, #00daf7, #2d2e33);
   buttons[8] = new Button(340, 560, 40, 40, 400, 400, 0, 30, "!", #565761, #3b3c42, #00daf7, #2d2e33);
+  buttons[9] = new Button(210, 380, 60, 40, 100, 2000, 100, 30, ".", #426569, #2d4547, #f700da, #1f2f30);
+  buttons[10] = new Button(130, 380, 60, 40, 2000, 100, 50, 35, "±", #50bab0, #2f9686, #03fff7, #267569);
+  buttons[11] = new Button(140, 320, 100, 40, 2000, 100, 50, 40, "=", #50bab0, #2f9686, #03fff7, #267569);
   numButtons[0] = new Button(50, 440, 60, 40, 100, 2000, 100, 30, "1", #426569, #2d4547, #f700da, #1f2f30);
   numButtons[1] = new Button(130, 440, 60, 40, 100, 2000, 100, 30, "2", #426569, #2d4547, #f700da, #1f2f30);
   numButtons[2] = new Button(210, 440, 60, 40, 100, 2000, 100, 30, "3", #426569, #2d4547, #f700da, #1f2f30);
@@ -41,9 +44,6 @@ void setup () {
   numButtons[7] = new Button(130, 560, 60, 40, 100, 2000, 100, 30, "8", #426569, #2d4547, #f700da, #1f2f30);
   numButtons[8] = new Button(210, 560, 60, 40, 100, 2000, 100, 30, "9", #426569, #2d4547, #f700da, #1f2f30);
   numButtons[9] = new Button(50, 380, 60, 40, 100, 2000, 100, 30, "0", #426569, #2d4547, #f700da, #1f2f30);
-  buttons[9] = new Button(210, 380, 60, 40, 100, 2000, 100, 30, ".", #426569, #2d4547, #f700da, #1f2f30);
-  buttons[10] = new Button(130, 380, 60, 40, 2000, 100, 50, 35, "±", #50bab0, #2f9686, #03fff7, #267569);
-  buttons[11] = new Button(140, 320, 100, 40, 2000, 100, 50, 40, "=", #50bab0, #2f9686, #03fff7, #267569);
 }
 
 void draw () {
@@ -70,6 +70,69 @@ void draw () {
   text("S U M S A N G", 139, 31);
   fill(#0d478f);
   text("S U M S A N G", 140, 30);
+}
+
+void keyReleased() {
+  println("Key:" + key);
+  println("KeyCode:" + keyCode);
+  if (key == '+') {
+    left = false;
+    op = "+";
+    dVal = "0.0";
+  } else if (key == '/') {
+    left = false;
+    op = "/";
+    dVal = "0.0";
+  } else if (key == '*') {
+    left = false;
+    op = "*";
+    dVal = "0.0";
+  } else if (key == '-') {
+    left = false;
+    op = "−";
+    dVal = "0.0";
+  } else if (key == '=' || keyCode == 10) {
+    performCalculation();
+  } else if (key == 'c' || keyCode == 8) {
+    l = 0;
+    r = 0;
+    result ="0.0";
+    op = "";
+    left = true;
+    dVal = "0.0";
+  } else if (key == '.') {
+    if (dVal.contains(".") == false) {
+      dVal += ".";
+    }
+  } else if (key == '!') {
+    left = true;
+    op = "!";
+    dVal = str(l) + "!";
+  } else if (key == '^') {
+    left = false;
+    op = "^";
+    dVal = "0.0";
+  } else if (keyCode == 49 || keyCode == 97 || keyCode == 50 || keyCode == 98 || keyCode == 51 || keyCode == 99 || keyCode == 52 || keyCode == 100 || keyCode == 53 || keyCode == 101 || keyCode == 54 || keyCode == 102 || keyCode == 55 || keyCode == 103 || keyCode == 56 || keyCode == 104 || keyCode == 57 || keyCode == 105 || keyCode == 48 || keyCode == 96) {
+    if (dVal.contains("ln(") == false && dVal.contains("√") == false) {
+      if (left == true) {
+        if (dVal.equals("0.0")) {
+          dVal = str(key);
+          l = float(dVal);
+        } else {
+          dVal += str(key);
+          l = float(dVal);
+        }
+      } else if (left == false) {
+        if (dVal.equals("0.0")) {
+          dVal = str(key);
+          r = float(dVal);
+        } else {
+          dVal += str(key);
+          r = float(dVal);
+        }
+      }
+    }
+  }
 }
 
 void mouseReleased () {
@@ -100,12 +163,14 @@ void mouseReleased () {
       op = "/";
       dVal = "0.0";
     } else if (buttons[i].over && buttons[i].val.equals("±")) { //Press the number you want to change the sign of and then "±"
-      if (left == true) {
-        l = l * -1;
-        dVal = str(l);
-      } else {
-        r = r * -1;
-        dVal = str(r);
+      if (int(dVal) != 0 ) {
+        if (left == true) {
+          l = l * -1;
+          dVal = str(l);
+        } else {
+          r = r * -1;
+          dVal = str(r);
+        }
       }
     } else if (buttons[i].over && buttons[i].val.equals("^")) {
       left = false;
@@ -117,11 +182,19 @@ void mouseReleased () {
       dVal = str(l) + "!";
     } else if (buttons[i].over && buttons[i].val.equals("ln")) { //Press the number you want to take the natural logarithm of first, and then "ln"
       if (left == true) {
-        dVal = "ln(" + str(l);
-        l = log(l);
+        if (l == 0) {
+          dVal = "ERROR: ln(0";
+        } else {
+          dVal = "ln(" + str(l);
+          l = log(l);
+        }
       } else {
-        dVal = "ln(" + str(r);
-        r = log(r);
+        if (r == 0) {
+          dVal = "ERROR: ln(0";
+        } else {
+          dVal = "ln(" + str(r);
+          r = log(r);
+        }
       }
     } else if (buttons[i].over && buttons[i].val.equals(".")) {
       if (dVal.contains(".") == false) {
@@ -141,7 +214,7 @@ void mouseReleased () {
   //Logic for number inputs
   for (int i = 0; i<numButtons.length; i ++) {
     if (dVal.contains("ln(") == false && dVal.contains("√") == false) {
-    if (numButtons[i].over == true && left == true) {
+      if (numButtons[i].over == true && left == true) {
         if (dVal.equals("0.0")) {
           dVal = numButtons[i].val;
           l = float(dVal);
@@ -249,12 +322,6 @@ void performCalculation() {
       result = str(z);
     } else {
       result = "ERROR";
-    }
-  } else if (op.equals("ln")) {
-    if (l ==0) {
-      result = "ERROR";
-    } else {
-      result = str(log(l));
     }
   }
   dVal = result;
