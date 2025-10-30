@@ -1,3 +1,4 @@
+
 //Mo Spiegel | 25 September 2025 | Calculator | 3B
 
 //Create empty buttons
@@ -72,6 +73,7 @@ void draw () {
   text("S U M S A N G", 140, 30);
 }
 
+//Sync to keyboard
 void keyReleased() {
   println("Key:" + key);
   println("KeyCode:" + keyCode);
@@ -113,7 +115,7 @@ void keyReleased() {
     op = "^";
     dVal = "0.0";
   } else if (keyCode == 49 || keyCode == 97 || keyCode == 50 || keyCode == 98 || keyCode == 51 || keyCode == 99 || keyCode == 52 || keyCode == 100 || keyCode == 53 || keyCode == 101 || keyCode == 54 || keyCode == 102 || keyCode == 55 || keyCode == 103 || keyCode == 56 || keyCode == 104 || keyCode == 57 || keyCode == 105 || keyCode == 48 || keyCode == 96) {
-    if (dVal.contains("ln(") == false && dVal.contains("√") == false) {
+    if (dVal.contains("ln(") == false && dVal.contains("√") == false && dVal.contains("!") == false && dVal.contains("ERROR") == false) {
       if (left == true) {
         if (dVal.equals("0.0")) {
           dVal = str(key);
@@ -184,6 +186,8 @@ void mouseReleased () {
       if (left == true) {
         if (l == 0) {
           dVal = "ERROR: ln(0";
+        } else if (l < 0) {
+          dVal = "ERROR";
         } else {
           dVal = "ln(" + str(l);
           l = log(l);
@@ -191,6 +195,8 @@ void mouseReleased () {
       } else {
         if (r == 0) {
           dVal = "ERROR: ln(0";
+        } else if (r < 0) {
+          dVal = "ERROR";
         } else {
           dVal = "ln(" + str(r);
           r = log(r);
@@ -213,7 +219,7 @@ void mouseReleased () {
 
   //Logic for number inputs
   for (int i = 0; i<numButtons.length; i ++) {
-    if (dVal.contains("ln(") == false && dVal.contains("√") == false) {
+    if (dVal.contains("ln(") == false && dVal.contains("√") == false && dVal.contains("!") == false && dVal.contains("ERROR") == false) {
       if (numButtons[i].over == true && left == true) {
         if (dVal.equals("0.0")) {
           dVal = numButtons[i].val;
@@ -305,7 +311,11 @@ void performCalculation() {
   } else if (op.equals("*")) {
     result = str(l * r);
   } else if (op.equals("/")) {
+    if (r == 0) {
+    result = "ERROR: ÷ by 0";
+    } else {
     result = str(l/r);
+    }
   } else if (op.equals("")) {
     result = str(l);
   } else if (op.equals("^")) {
@@ -317,7 +327,7 @@ void performCalculation() {
         z = z * (l - i);
         result = str(z);
       }
-    } else if (l ==0) {
+    } else if (l == 0) {
       z = 1;
       result = str(z);
     } else {
