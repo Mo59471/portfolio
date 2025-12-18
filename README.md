@@ -1,20 +1,6 @@
 # Programming Portfolio
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+&nbsp;
 
 ## Mo Spiegel | 2026
 
