@@ -2,12 +2,9 @@
 
 
 ## Mo Spiegel | 2026
-
 &nbsp;
-
 ### Contact: moshespieg@gmail.com
-
-
+&nbsp;
 ## Projects for Term 1
 
 ### Calculator (2025)
