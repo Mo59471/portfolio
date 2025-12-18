@@ -1,6 +1,8 @@
 # Programming Portfolio
+
+
 ## Mo Spiegel | 2026
-<br>
+
 
 ### Contact: moshespieg@gmail.com
 
