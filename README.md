@@ -4,9 +4,13 @@
 &nbsp;
 ## Certifications
 * None as of yet, will take CTE Certification Test for Computer Programming in January
+  
 &nbsp;
+
 ## Projects for Term 1
+
 &nbsp;
+
 ### Calculator (2025)
 
 
