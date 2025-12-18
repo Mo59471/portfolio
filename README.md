@@ -2,7 +2,6 @@
 
 
 ## Mo Spiegel | 2026
-&nbsp;
 ### Contact: moshespieg@gmail.com
 &nbsp;
 ***
