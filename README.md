@@ -58,6 +58,8 @@ This project is an interactive digital artwork programmed in Java using the Proc
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/ZOOG)
 
 &nbsp;
+***
+&nbsp;
 
 ## Projects for Term 2
 
