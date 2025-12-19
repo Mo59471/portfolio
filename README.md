@@ -88,19 +88,19 @@ This project is an object-oriented music utility tool programmed in Java using t
 &nbsp;
 My individual contributions are as follows:
 &nbsp;
-1. ** Coded the Note Class **
+1. **Coded the Note Class**
 * This class codes for the Note object, which is used by the user to input notes onto a score for the auto-harmonizer utility that takes any given melody and provides for it the harmonized chord. The Note class has a constructor that defines its position on the score with x and y integers, whether it has been inputted with a boolean, whether it is flat or sharp with booleans, and its note value with the 'noteTog' integer. A hover() member method draws a gray-shaded note that snaps to lines and spaces on the score as the user hovers their cursor over it, a functionality which is achieved by defining individual hitboxes for each line and space. The inputNote() member method inputs a static note on the score and is called under a greater mouseReleased() method, and uses the same hitbox logic to initialize the y variable based on the user's cursor position on the score and draw a note who's position is determined by this y. The class uses imported PImages and contains if conditions for the sharp and flat booleans to determine whether or not to draw a sharp or flat above/below an inputted or hovering note, as well as if conditions for the 'restMode' boolean to determine whether or not to draw the note as a rest.
 
-2. # Coded the harmMode() Method #
+2. **Coded the harmMode() Method**
 * This method under the main project file contains all the display logic for the auto-harmonizer screen and updates the notes array list once a note is inputted. It also contains loops that iterate through each note's member methods, and contains the display logic for displaying the resulting harmonized chord once a harmonization is carried out by checking values from the harmonize() method's returned string list.
 
-3. # Coded the harmPlay() Method #
+3. **Coded the harmPlay() Method**
 * This method under the main project file contains logic for playing the inputted notes/melody and the harmonized chord for the auto-harmonizer utility. It utilizes a for-loop with delays inside of it to iterate through every note on the score and play a pitch corresponding to its y-position on the score, with the delays determining a given note's pitch's duration using its noteTog value. The harmonized chord is played as well by simeltaneous if statements that check values from the harmonize() method's returned string list.
 
-3. # Coded harmButton Functionality #
+3. **Coded harmButton Functionality**
 * The harmButton array list contains all the user-clickable buttons for the harmonizer utility, and the logic for each of these buttons was implemented by myself under the mouseReleased method that detects a click and release. The various buttons include sharp and flat buttons, note value buttons, a rest toggle button, a clef toggle button, a play button, and a harmonize button, as well as a clear and backspace button. The sharp, flat, rest, and note value buttons alter the sharp, flat, restMode, and noteTog variables in the constructor of the last note in the array list so long as it hasn't been inputted (hovering). The clear and backspace buttons remove notes from the dynamic array list.
 
-4. # Miscellaneous Bug Fixes, Adjustments, and Data Contributions #
+4. **Miscellaneous Bug Fixes, Adjustments, and Data Contributions**
 * Added images for the notes, rests, and sharps to a data folder
 * Project-wide bug fixes
 * Small project-wide contributions such as PImage initializations, etc.
