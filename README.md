@@ -24,7 +24,7 @@ This project is an interactive graphical calculator programmed in Java using the
 ![Calculator UML](https://github.com/Mo59471/portfolio/blob/main/images/CalculatorUML.jpg?raw=true)
 
 &nbsp;
-***
+___
 &nbsp;
 
 ### Historic Computer Systems Interactive Timeline (2025)
@@ -41,7 +41,7 @@ This project is an interactive graphical timeline programmed in Java using the P
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/Computer%20Timeline)
 
 &nbsp;
-***
+___
 &nbsp;
 
 ### ZOOG: Interactive Digital Art (2025)
@@ -58,7 +58,7 @@ This project is an interactive digital artwork programmed in Java using the Proc
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/ZOOG)
 
 &nbsp;
-***
+___
 &nbsp;
 
 ## Projects for Term 2
@@ -79,7 +79,7 @@ This project is a dynamic graphical display of randomly generated car objects pr
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/MakingCars)
 
 &nbsp;
-***
+___
 &nbsp;
 
 ### Musikhelfer (2025) (Team Project)
