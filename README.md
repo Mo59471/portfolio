@@ -88,7 +88,7 @@ This project is an object-oriented music utility tool programmed in Java using t
 &nbsp;
 My individual contributions are as follows:
 &nbsp;
-1. # Coded the Note Class #
+1. ** Coded the Note Class **
 * This class codes for the Note object, which is used by the user to input notes onto a score for the auto-harmonizer utility that takes any given melody and provides for it the harmonized chord. The Note class has a constructor that defines its position on the score with x and y integers, whether it has been inputted with a boolean, whether it is flat or sharp with booleans, and its note value with the 'noteTog' integer. A hover() member method draws a gray-shaded note that snaps to lines and spaces on the score as the user hovers their cursor over it, a functionality which is achieved by defining individual hitboxes for each line and space. The inputNote() member method inputs a static note on the score and is called under a greater mouseReleased() method, and uses the same hitbox logic to initialize the y variable based on the user's cursor position on the score and draw a note who's position is determined by this y. The class uses imported PImages and contains if conditions for the sharp and flat booleans to determine whether or not to draw a sharp or flat above/below an inputted or hovering note, as well as if conditions for the 'restMode' boolean to determine whether or not to draw the note as a rest.
 
 2. # Coded the harmMode() Method #
