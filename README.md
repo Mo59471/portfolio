@@ -24,7 +24,8 @@ This project is an interactive graphical calculator programmed in Java using the
 ![Calculator UML](https://github.com/Mo59471/portfolio/blob/main/images/CalculatorUML.jpg?raw=true)
 
 &nbsp;
-
+***
+&nbsp;
 ### Historic Computer Systems Interactive Timeline (2025)
 
 This project is an interactive graphical timeline programmed in Java using the Processing IDE which displays information about historic computer systems. It features a programically drawn timeline with layered text and shapes to create a graphically pleasing interface. The application is designed with modularity, featuring two custom methods that draw event boxes and date markers. A boolean flag is used to determine whether the event boxes and date markers are placed above or below the timeline. The event boxes utilize the prebuilt mouseX and mouseY variables to track the user's cursor and create a hitbox that detects whether the user is hovering over them. Detailed descriptions of several computer systems are given once the user hovers over an event box.
