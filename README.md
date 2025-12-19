@@ -44,7 +44,7 @@ This project is an interactive graphical timeline programmed in Java using the P
 
 ### ZOOG: Interactive Digital Art (2025)
 
-This project is an interactive digital artwork that uses a sprite ('Zoog') which is drawn across the screen by repeatedly calling the developer-defined 'drawZoog' method underneath a greater draw method. The drawZoog method uses an argument with two position paramaters that are defined as some offset of mouseX and mouseY, causing the set of sprites to follow the user's cursor and enable them to draw Zoogs across the screen. The color of each sprite also changes depending on the mouse position, creating a visually interesting and interactive digital artwork.
+This project is an interactive digital artwork programmed in Java using the Processing IDE. It features a programizally rendered sprite ('Zoog') which is drawn across the screen by repeatedly calling the developer-defined 'drawZoog' method underneath a greater draw method. The drawZoog method uses an argument with two position paramaters that are defined as some offset of mouseX and mouseY, causing the set of sprites to follow the user's cursor and enabling the user to draw Zoogs across the screen. The color of each sprite also changes depending on the mouse position, creating a visually interesting and interactive digital artwork.
 
 &nbsp;
 
