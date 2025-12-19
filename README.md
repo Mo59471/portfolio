@@ -1,5 +1,5 @@
 # Programming Portfolio
-## Mo Spiegel | 2026
+## Mo Spiegel | 2025-2026
 ### Contact: moshespieg@gmail.com
 &nbsp;
 ## Certifications
@@ -58,4 +58,26 @@ This project is an interactive digital artwork programmed in Java using the Proc
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/ZOOG)
 
 &nbsp;
+
+## Projects for Term 2
+
+&nbsp;
+
+### Making Cars: Graphics Display (2025)
+
+This project is a dynamic graphical display of randomly generated car objects programmed in Java using the Processing IDE. It features an object oriented design, utilizing the class 'Car' with a constructor including a speed parameter, position parameters, a lights parameter (determining if a given car is displayed with headlights), a color parameter, and a forward boolean parameter that determines which direction a given car moves (forward or backwards). All of these parameters are set randomly to create a different display of random, moving cars each time the application is run, with the forward parameter being determined using a local variable set to a random integer 1 or 0. 100 Car objects are called in an array in the mainfile, and displayed by looping through each one's member 'display' method. The cars are programically drawn and layered shape techniques are used to create drop shadows.
+
+&nbsp;
+
+![Running Application](https://github.com/Mo59471/portfolio/blob/main/images/MakingCars.png?raw=true)
+
+&nbsp;
+
+* [Windows EXE](https://github.com/Mo59471/portfolio/blob/main/src/MakingCars/windows-amd64.zip)
+* [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/MakingCars)
+
+&nbsp;
+***
+&nbsp;
+
 
