@@ -26,6 +26,7 @@ This project is an interactive graphical calculator programmed in Java using the
 &nbsp;
 ***
 &nbsp;
+
 ### Historic Computer Systems Interactive Timeline (2025)
 
 This project is an interactive graphical timeline programmed in Java using the Processing IDE which displays information about historic computer systems. It features a programically drawn timeline with layered text and shapes to create a graphically pleasing interface. The application is designed with modularity, featuring two custom methods that draw event boxes and date markers. A boolean flag is used to determine whether the event boxes and date markers are placed above or below the timeline. The event boxes utilize the prebuilt mouseX and mouseY variables to track the user's cursor and create a hitbox that detects whether the user is hovering over them. Detailed descriptions of several computer systems are given once the user hovers over an event box.
@@ -40,3 +41,19 @@ This project is an interactive graphical timeline programmed in Java using the P
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/Computer%20Timeline)
 
 &nbsp;
+
+### ZOOG: Interactive Digital Art (2025)
+
+This project is an interactive digital artwork that uses a sprite ('Zoog') which is drawn across the screen by repeatedly calling the developer-defined 'drawZoog' method underneath a greater draw method. The drawZoog method uses an argument with two position paramaters that are defined as some offset of mouseX and mouseY, causing the set of sprites to follow the user's cursor and enable them to draw Zoogs across the screen. The color of each sprite also changes depending on the mouse position, creating a visually interesting and interactive digital artwork.
+
+&nbsp;
+
+![Running Application](https://github.com/Mo59471/portfolio/blob/main/images/ZOOG.png?raw=true)
+
+&nbsp;
+
+* [Windows EXE](https://github.com/Mo59471/portfolio/blob/main/src/ZOOG/windows-amd64.zip)
+* [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/ZOOG)
+
+&nbsp;
+
