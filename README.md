@@ -41,6 +41,8 @@ This project is an interactive graphical timeline programmed in Java using the P
 * [Source Code](https://github.com/Mo59471/portfolio/tree/main/src/Computer%20Timeline)
 
 &nbsp;
+***
+&nbsp;
 
 ### ZOOG: Interactive Digital Art (2025)
 
