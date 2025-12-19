@@ -107,7 +107,7 @@ My individual contributions are as follows:
 
 &nbsp;
 
-![Running Application](https://github.com/Mo59471/portfolio/blob/main/images/MakingCars.png?raw=true)
+![Running Application](https://github.com/Mo59471/portfolio/blob/main/images/Musikhelfer.png?raw=true)
 
 &nbsp;
 
