@@ -3,7 +3,7 @@
 ### Contact: moshespieg@gmail.com
 &nbsp;
 ## Certifications
-* None as of yet, will take CTE Certification Test for Computer Programming in January
+* CTE Certification Test for Computer Programming 1: Scored 100%
   
 &nbsp;
 
