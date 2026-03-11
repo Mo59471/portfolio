@@ -1,7 +1,9 @@
 # Programming Portfolio
 ## Mo Spiegel | 2025-2026
 ### Contact: moshespieg@gmail.com
+
 &nbsp;
+
 ## Certifications
 * CTE Certification Test for Computer Programming 1: Scored 100%
   
@@ -121,3 +123,24 @@ This project was stored in a seperate group repository, linked to here:
 
 * [Musikhelfer Repository](https://github.com/Kai535813/Musikhelfer/tree/main)
 
+&nbsp;
+___
+&nbsp;
+
+## Projects for Term 3
+
+&nbsp;
+
+### Daoist Pharmaceutical (2026)
+
+This project is a tycoon style 2D game, where a player takes the role of the son of the Jade Emperor, sent to Earth to heal people using traditional Chinese medicine as a punishment. In the game, players build pharmaceuticals on top of randomly generated diseases, access the market to buy medicines, and extract randomly generated resources. Part of the gameplay will also include elaborate political and socioeconomic relationships with Western pharmaceutical monopolies, and the Chinese Communist Party. The player interacts with the game via the map, which will feature click interaction, as well as a panel of side buttons. The game is programmed using Python, with the Pygame library used to support graphics.
+
+This game is an unfinished group project contributed to by myself, Ethan Tang, Simon Sakata, and Kai Yun Chao. My contributions as of now include coding the Button class, coding some of the Disease Class logic, and contributing to the Main File.
+
+&nbsp;
+
+![Running Application](https://github.com/Mo59471/portfolio/blob/main/images/DaoistPharmaceutical.png?raw=true)
+
+&nbsp;
+
+* [Project Repository](https://github.com/Kai535813/--Daoist-Pharmaceutical)
