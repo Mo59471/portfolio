@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <!-- Meta tags and styles for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      /* Sets the page background and layout */
+      margin: 0px 0px 0px 0px;
+      padding: 0,0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .page-container {
+      /* Main container for all sections */
+      background-color: rgb(218, 233, 237);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+      margin: 0,0;
+      
+      width: 100%; height: 100%;
+    }
+    header {
+      /* Styles the header section */
+      height: 30%;
+      min-height: 200px;
+      background-color: rgb(34, 37, 38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header h1 {
+      /* Styles the header title */
+      font-family: 'Major Mono Display', Arial, sans-serif;
+      font-size: 80px;
+      color: rgb(171, 194, 201);
+      margin: 0;
+      text-align: center;
+    }
+    nav {
+      /* Styles the navigation bar */
+      height: 60px;
+      width: 100%;
+      background-color: rgb(53, 65, 69);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 0,0;
+    }
+    nav a {
+      /* Styles navigation links */
+      color: #fff;
+      font-family: 'Raleway', Arial, sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover {
+      /* Hover effect for navigation links */
+      text-decoration: underline;
+    }
+    main {
+      /* Styles the main content area */
+      height: auto;
+      min-height: 400px;
+      background-color: rgb(218, 233, 237);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    main p, main ul {
+      /* Styles content text and lists */
+      font-family: 'Raleway', Arial, sans-serif;
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #0c3740;
+    }
+    main h2 {
+      font-family: 'Major Mono Display', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      color: rgb(53, 65, 69);
+      text-align: left;
+    }
+    main img {
+      /* Styles content images */
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    main ul {
+      /* Styles content lists */
+      padding-left: 20px;
+    }
+    footer {
+      /* Styles the footer section */
+      height: 20%;
+      min-height: 80px;
+      background-color: rgb(91, 192, 184);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    footer p {
+      /* Styles footer text */
+      margin: 0;
+      font-size: 14px;
+      color: #fff;
+    }
+    .accent a {
+      /* Styles back-to-top link (if enabled) */
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .accent a:hover {
+      /* Hover effect for back-to-top link */
+      text-decoration: underline;
+    }
+    .img {
+      position: relative;
+      position: absolute;
+      top: 260px;
+      right: 0px;
+    }
+  </style>
+    <title>PageVis - Exported Design</title>
+</head>
+<body>
+    <!-- Main container for your webpage -->
+    <div class="page-container">
+        <!-- <header> for site title or logo (edit the <h1> text) -->
+        <header>
+            <h1>Mo spieGel</h1>
+        </header>
+        <!-- <nav> for navigation links (edit or add <a> tags) -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Programming</a>
+        </nav>
+        <!-- <main> for main content. Replace or add text, images, lists, etc. -->
+        <main> 
+          <h2>About</h2>
+          <p>Hello there my fellow human individual<p>
+          <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Self.jpg?raw=true" class = "img">
+        </main>
+        <!-- <footer> for copyright or contact info (edit the text) -->
+        <footer>
+            <p>© 2026 Your Name</p>
+        </footer>
+        <!-- Accent: Decorative circle. Remove this <div>, change its shape (edit CSS), or add content (e.g., <a> or <img>) -->
+        <div class="accent"></div>
+    </div>
+</body>
+</html>
+  
