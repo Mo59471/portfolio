@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Meta tags and styles for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      /* Sets the page background and layout */
+      margin: 0px 0px 0px 0px;
+      padding: 0,0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .page-container {
+      /* Main container for all sections */
+      background-color: rgb(218, 233, 237);
+      overflow: hidden;
+      position: relative;
+      margin: 0,0;
+      
+      width: 100%; height: 100%;
+    }
+    header {
+      /* Styles the header section */
+      height: 30%;
+      min-height: 220px;
+      background-color: rgb(34, 37, 38);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    header h1 {
+      /* Styles the header title */
+      font-family: 'Major Mono Display', Arial, sans-serif;
+      font-size: 80px;
+      color: rgb(171, 194, 201);
+      margin: 0;
+      text-align: center;
+    }
+    header sub {
+      font-family: 'Raleway', Arial, sans-serif;
+      font-size: 20px;
+      color: rgb(171, 194, 201);
+      margin: 0;
+      text-align: center;
+    }
+    nav {
+      /* Styles the navigation bar */
+      height: 80px;
+      width: 100%;
+      background-color: rgb(53, 65, 69);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 0,0;
+    }
+    nav a {
+      /* Styles navigation links */
+      color: #fff;
+      font-family: 'Raleway', Arial, sans-serif;
+      font-size: 17px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      /* Hover effect for navigation links */
+      text-decoration: underline;
+    }
+    main {
+      /* Styles the main content area */
+      height: auto;
+      min-height: 800px;
+      background-color: rgb(218, 233, 237);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    main p, main ul, main a {
+      /* Styles content text and lists */
+      font-family: 'Raleway', Arial, sans-serif;
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      color: rgb(85, 101, 105);
+      text-decoration: none;
+    }
+    main p2 {
+      font-family: 'Raleway', Arial, sans-serif;
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: rgb(85, 101, 105);
+      text-decoration: none;
+    }
+    main a:hover {
+      text-decoration: underline;
+    }
+    main h2 {
+      font-family: 'Major Mono Display', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      color: rgb(53, 65, 69);
+      text-align: center;
+    }
+    main h3 {
+      font-family: 'Raleway', Arial, sans-serif;
+      font-weight: 300;
+      margin: 0 0 10px 0;
+      font-size: 27px;
+      color: rgb(53, 65, 69);
+    }
+    main img {
+      /* Styles content images */
+      height: auto;
+      display: block;
+    }
+    main ul {
+      /* Styles content lists */
+      padding-left: 20px;
+    }
+    footer {
+      /* Styles the footer section */
+      height: 20%;
+      min-height: 80px;
+      background-color: rgb(171, 194, 201);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    footer p {
+      /* Styles footer text */
+      margin: 0;
+      font-size: 24px;
+      font-family: 'Raleway', Arial, sans-serif;
+      color: rgb(110, 129, 134);
+    }
+    .accent a {
+      /* Styles back-to-top link (if enabled) */
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .accent a:hover {
+      /* Hover effect for back-to-top link */
+      text-decoration: underline;
+    }
+    .img1 {
+      position:absolute;
+      right: 50px;
+      top: 440px;
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .img2 {
+      position:absolute;
+      right: 50px;
+      top: 870px;
+      width: 340px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .img3 {
+      position:absolute;
+      right: 50px;
+      top: 1210px;
+      width: 160px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .img4 {
+      position:absolute;
+      right: 50px;
+      top: 1570px;
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .img5 {
+      position:absolute;
+      right: 50px;
+      top: 1900px;
+      width: 210px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .img1:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .img2:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .img3:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .img4:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .img5:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .textbox {
+      width: 1000px;
+      min-height: 200px; 
+      position: absolute;
+      left: 54px;
+    }
+    hr.lineStyle {
+      border-top: 1px solid rgb(171, 194, 201);   /* Set the color */
+    }
+    .card {
+        background-color:  rgb(193, 214, 220);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 24px;
+        margin: 20px;
+        border-radius: 10px;
+        left: 30px;
+        min-height: 235px;
+    }
+  </style>
+    <title>Mo Spiegel | Portfolio</title>
+</head>
+<body>
+    <!-- Main container for your webpage -->
+    <div class="page-container">
+        <!-- <header> for site title or logo (edit the <h1> text) -->
+        <header>
+            <h1>pRoGRAmminG </h1>
+            <p> </p>
+            <sub>Python | Java (Processing)</sub>
+        </header>
+        <!-- <nav> for navigation links (edit or add <a> tags) -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Programming.html">Programming</a>
+        </nav>
+        <!-- <main> for main content. Replace or add text, images, lists, etc. -->
+        <main> 
+        <h2>ceRtificAtions</h2>
+          <div class = "card">
+            <h3 style = "font-weight: bold;">Computer Programming 1 State Certification</h3>
+            <ul>
+                <li>Administered by YouScience</li>
+                <li>Scored 100%</li>
+            </ul>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/images/Mo%20Spiegel_Computer%20Programming%201_01092026.pdf" download>
+                <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Certification.png?raw=true" class = "img1">
+            </a>
+          </div>
+        <br>
+        <hr class = "lineStyle">
+        <h2>pRojects</h2>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Relativistic Boat (2026)</h3>
+            <div class = "textbox">
+                <p2>Relativstic Boat is an interactive, graphical simulator that visualizes the relativistic phenomena of time dilation and Lorentz contraction for a moving sailboat (chosen for artistic appeal). The program calculates the relativstically altered time and length intervals for the moving boat given an inputted user velocity, which can be adjusted on a slider or typed in manually. The program's architecture features an object-oriented design, with 5 classes for checkboxes, buttons, clocks, the boat, and the slider. Advanced data types and programming techniques are used, including dictionaries to store class object data, lists to instantiate classes, an event detection loop, time tracking with Pygame's Clock object, string manipulation, etc.</p2>
+            </div>>
+            <a href="https://github.com/Mo59471/RelativisticBoats">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/RBoats.png?raw=true" class = "img2">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Graphical Calculator (2025)</h3>
+            <div class = "textbox">
+                <p2>This project is an object-oriented graphical calculator programmed in Java using the Processing IDE. It features a custom-designed interface with a numeric keypad, operation buttons, and a live display area. All buttons are created using a custom Button class that handles their visuals, hover effects, and click detection. The calculator supports basic operations like addition, subtraction, multiplication, and division, as well as advanced functions such as exponentiation, natural logarithm, square root, factorial, sign toggle, and decimal input. It uses two operands (l and r) with a boolean flag to track which is being edited, while the current value is shown through the dVal display variable. Calculations are handled in the performCalculation() method, which also validates special cases like factorials and logarithms.</p2>
+            </div>>
+            <a href="https://github.com/Mo59471/portfolio/tree/main/src/Calculator">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/calc.png?raw=true" class = "img3">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Daoist Pharmaceutical (2026)</h3>
+            <div class = "textbox">
+                <p2>Daoist Pharmaceutical is a group project in Python, using Pygame, contributed to by myself, Ethan Tang, Simon Sakata, and Kai Yun Chao. This project is an object-oriented tycoon-style game where the player takes the role of the son of the mythological Jade Emperor, sent down to Asia to cure diseases using traditional oriental medicines. The project features random disease spawning and curing, resource spawning and extraction, disease growth, a reputation system that determines victory, incremental difficulty over year timespans, a plethora of purchasable medicines that effect different symptoms, etc. The project utilizes dictionaries, lists, pixel scanning, event detection, complex graphics implementations, etc. I largely contributed to the game UI, Disease class logic, and the Button class.</p2>
+            </div>>
+            <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Daoist.png?raw=true" class = "img4">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Musikhelfer (2025)</h3>
+            <div class = "textbox">
+                <p2>Musikhelfer is a group project contributed to by myself, Ethan Tang, Simon Sakata, Kai Yun Chao, and Aristotle Stokes. The project is an object-oriented music utility app coded in Java with the Processing IDE, and contains an ear-trainer, tuner, metronome, and auto-harmonizer. I coded the Note class, which allows users to place notes on the score for the auto-harmonizer, as well as the playback functionality and button logic for buttons involved with the auto-harmonizer. This required the use of advanced programming techniques, including array lists, mouse detection and event tracking, screen management via case statements, etc.</p2>
+            </div>>
+            <a href="https://github.com/Kai535813/Musikhelfer">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Musikhelfer.png?raw=true" class = "img5">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        </main>
+        <!-- <footer> for copyright or contact info (edit the text) -->
+        <footer>
+            <p>© 2026 Mo Spiegel</p>
+        </footer>
+        <!-- Accent: Decorative circle. Remove this <div>, change its shape (edit CSS), or add content (e.g., <a> or <img>) -->
+        <div class="accent"></div>
+    </div>
+</body>
+</html>
+  
