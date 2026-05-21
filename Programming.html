@@ -146,88 +146,88 @@
       /* Hover effect for back-to-top link */
       text-decoration: underline;
     }
-    .img1 {
-      position:absolute;
-      right: 50px;
-      top: 440px;
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    .img2 {
-      position:absolute;
-      right: 50px;
-      top: 870px;
-      width: 340px;
-      height: auto;
-      cursor: pointer;
-      border-radius: 10px;
-    }
-    .img3 {
-      position:absolute;
-      right: 50px;
-      top: 1210px;
-      width: 160px;
-      height: auto;
-      cursor: pointer;
-      border-radius: 10px;
-    }
-    .img4 {
-      position:absolute;
-      right: 50px;
-      top: 1570px;
-      width: 400px;
-      height: auto;
-      border-radius: 10px;
-      cursor: pointer;
-    } 
-    .img5 {
-      position:absolute;
-      right: 50px;
-      top: 1900px;
-      width: 210px;
-      height: auto;
-      border-radius: 10px;
-      cursor: pointer;
-    } 
-    .img1:hover {
-        transform: scale(1.08);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    .img2:hover {
-        transform: scale(1.08);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    .img3:hover {
-        transform: scale(1.08);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    .img4:hover {
-        transform: scale(1.08);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    .img5:hover {
-        transform: scale(1.08);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        background-color:  rgb(193, 214, 220);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 24px;
+        margin: 20px;
+        border-radius: 10px;
+        min-height: 235px;
     }
     .textbox {
       width: 1000px;
       min-height: 200px; 
       position: absolute;
       left: 54px;
+      top: 70px;
+    }
+    .certImg1 {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .boatImg {
+      width: 340px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .calcImg {
+      width: 160px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .daoImg {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .museImg {
+      width: 210px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .zoogImg {
+      width: 230px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .certImg1:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .boatImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .calcImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .daoImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .museImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .zoogImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
     hr.lineStyle {
       border-top: 1px solid rgb(171, 194, 201);   /* Set the color */
-    }
-    .card {
-        background-color:  rgb(193, 214, 220);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 24px;
-        margin: 20px;
-        border-radius: 10px;
-        left: 30px;
-        min-height: 235px;
     }
   </style>
     <title>Mo Spiegel | Portfolio</title>
@@ -251,24 +251,41 @@
         <h2>ceRtificAtions</h2>
           <div class = "card">
             <h3 style = "font-weight: bold;">Computer Programming 1 State Certification</h3>
-            <ul>
-                <li>Administered by YouScience</li>
-                <li>Scored 100%</li>
-            </ul>
+            <div class = "textbox">
+              <ul>
+                  <li>Administered by YouScience</li>
+                  <li>Scored 100%</li>
+              </ul>
+            </div>
             <a href="https://github.com/Mo59471/portfolio/blob/main/images/Mo%20Spiegel_Computer%20Programming%201_01092026.pdf" download>
-                <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Certification.png?raw=true" class = "img1">
+                <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Certification.png?raw=true" class = "certImg1">
             </a>
           </div>
-        <br>
+          <br>
+          <p> </p>
+          <div class = "card">
+            <h3 style = "font-weight: bold;">Programming 2 Python State Certification</h3>
+            <div class = "textbox">
+              <ul>
+                  <li>Administered by YouScience</li>
+                  <li>Scored 95.24%</li>
+              </ul>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/images/Mo%20Spiegel_Computer%20Programming%202%20Python_05192026.pdf" download>
+                <img src = "https://github.com/Mo59471/portfolio/blob/main/images/PythonCertification.png?raw=true" class = "certImg1">
+            </a>
+          </div>
+          <br>
+          <p> </p>
         <hr class = "lineStyle">
         <h2>pRojects</h2>
         <div class = "card">
             <h3 style = "font-weight: bold;">Relativistic Boat (2026)</h3>
             <div class = "textbox">
                 <p2>Relativstic Boat is an interactive, graphical simulator that visualizes the relativistic phenomena of time dilation and Lorentz contraction for a moving sailboat (chosen for artistic appeal). The program calculates the relativstically altered time and length intervals for the moving boat given an inputted user velocity, which can be adjusted on a slider or typed in manually. The program's architecture features an object-oriented design, with 5 classes for checkboxes, buttons, clocks, the boat, and the slider. Advanced data types and programming techniques are used, including dictionaries to store class object data, lists to instantiate classes, an event detection loop, time tracking with Pygame's Clock object, string manipulation, etc.</p2>
-            </div>>
+            </div>
             <a href="https://github.com/Mo59471/RelativisticBoats">
-              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/RBoats.png?raw=true" class = "img2">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/RBoats.png?raw=true" class = "boatImg">
             </a>
         </div>
         <br>
@@ -277,9 +294,9 @@
             <h3 style = "font-weight: bold;">Graphical Calculator (2025)</h3>
             <div class = "textbox">
                 <p2>This project is an object-oriented graphical calculator programmed in Java using the Processing IDE. It features a custom-designed interface with a numeric keypad, operation buttons, and a live display area. All buttons are created using a custom Button class that handles their visuals, hover effects, and click detection. The calculator supports basic operations like addition, subtraction, multiplication, and division, as well as advanced functions such as exponentiation, natural logarithm, square root, factorial, sign toggle, and decimal input. It uses two operands (l and r) with a boolean flag to track which is being edited, while the current value is shown through the dVal display variable. Calculations are handled in the performCalculation() method, which also validates special cases like factorials and logarithms.</p2>
-            </div>>
+            </div>
             <a href="https://github.com/Mo59471/portfolio/tree/main/src/Calculator">
-              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/calc.png?raw=true" class = "img3">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/calc.png?raw=true" class = "calcImg">
             </a>
         </div>
         <br>
@@ -288,9 +305,9 @@
             <h3 style = "font-weight: bold;">Daoist Pharmaceutical (2026)</h3>
             <div class = "textbox">
                 <p2>Daoist Pharmaceutical is a group project in Python, using Pygame, contributed to by myself, Ethan Tang, Simon Sakata, and Kai Yun Chao. This project is an object-oriented tycoon-style game where the player takes the role of the son of the mythological Jade Emperor, sent down to Asia to cure diseases using traditional oriental medicines. The project features random disease spawning and curing, resource spawning and extraction, disease growth, a reputation system that determines victory, incremental difficulty over year timespans, a plethora of purchasable medicines that effect different symptoms, etc. The project utilizes dictionaries, lists, pixel scanning, event detection, complex graphics implementations, etc. I largely contributed to the game UI, Disease class logic, and the Button class.</p2>
-            </div>>
+            </div>
             <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical">
-              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Daoist.png?raw=true" class = "img4">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Daoist.png?raw=true" class = "daoImg">
             </a>
         </div>
         <br>
@@ -299,9 +316,20 @@
             <h3 style = "font-weight: bold;">Musikhelfer (2025)</h3>
             <div class = "textbox">
                 <p2>Musikhelfer is a group project contributed to by myself, Ethan Tang, Simon Sakata, Kai Yun Chao, and Aristotle Stokes. The project is an object-oriented music utility app coded in Java with the Processing IDE, and contains an ear-trainer, tuner, metronome, and auto-harmonizer. I coded the Note class, which allows users to place notes on the score for the auto-harmonizer, as well as the playback functionality and button logic for buttons involved with the auto-harmonizer. This required the use of advanced programming techniques, including array lists, mouse detection and event tracking, screen management via case statements, etc.</p2>
-            </div>>
+            </div>
             <a href="https://github.com/Kai535813/Musikhelfer">
-              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Musikhelfer.png?raw=true" class = "img5">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Musikhelfer.png?raw=true" class = "museImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">ZOOG (2025)</h3>
+            <div class = "textbox">
+                <p2>ZOOG is an interactive digital artwork, coded in Java, in the Processing environment. The project uses mouse position detection to draw a set of "ZOOG" sprites following the user's cursor, with dynamic colors that are transformations of the user's mouse position. As such, users are able to draw ZOOG sprites across the screen that shift through the RGB spectrum. This project highlights user interaction, programmical rendering, RGB manipulation, and graphical techniques.</p2>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/src/ZOOG/ZOOG.pde">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/ZOOG.png?raw=true" class = "zoogImg">
             </a>
         </div>
         <br>
