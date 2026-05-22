@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Meta tags and styles for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      /* Sets the page background and layout */
+      margin: 0px 0px 0px 0px;
+      padding: 0,0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .page-container {
+      /* Main container for all sections */
+      background-color: rgb(81, 97, 101);
+      overflow: hidden;
+      position: relative;
+      margin: 0,0;
+      
+      width: 100%; height: 100%;
+    }
+    header {
+      /* Styles the header section */
+      height: 30%;
+      min-height: 220px;
+      background-color: rgb(34, 37, 38);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    header h1 {
+      /* Styles the header title */
+      font-family: 'Major Mono Display', Arial, sans-serif;
+      font-size: 80px;
+      color: rgb(171, 194, 201);
+      margin: 0;
+      text-align: center;
+    }
+    header sub {
+      font-family: 'Raleway', Arial, sans-serif;
+      font-size: 20px;
+      color: rgb(171, 194, 201);
+      margin: 0;
+      text-align: center;
+    }
+    nav {
+      /* Styles the navigation bar */
+      height: 80px;
+      width: 100%;
+      background-color: rgb(53, 65, 69);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 0,0;
+    }
+    nav a {
+      /* Styles navigation links */
+      color: #fff;
+      font-family: 'Raleway', Arial, sans-serif;
+      font-size: 17px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      /* Hover effect for navigation links */
+      text-decoration: underline;
+    }
+    main {
+      /* Styles the main content area */
+      height: auto;
+      min-height: 800px;
+      background-color: rgb(81, 97, 101);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    main p, main ul, main a {
+      /* Styles content text and lists */
+      font-family: 'Raleway', Arial, sans-serif;
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      color: rgb(226, 236, 239);
+      text-decoration: none;
+    }
+    main p2 {
+      font-family: 'Raleway', Arial, sans-serif;
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: rgb(226, 236, 239);
+      text-decoration: none;
+    }
+    main a:hover {
+      text-decoration: underline;
+    }
+    main h2 {
+      font-family: 'Major Mono Display', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      color: rgb(226, 236, 239);
+      text-align: center;
+    }
+    main h3 {
+      font-family: 'Raleway', Arial, sans-serif;
+      font-weight: 300;
+      margin: 0 0 10px 0;
+      font-size: 27px;
+      color: rgb(226, 236, 239);
+    }
+    main img {
+      /* Styles content images */
+      height: auto;
+      display: block;
+    }
+    main ul {
+      /* Styles content lists */
+      padding-left: 20px;
+    }
+    footer {
+      /* Styles the footer section */
+      height: 20%;
+      min-height: 80px;
+      background-color: rgb(53, 65, 69);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    footer p {
+      /* Styles footer text */
+      margin: 0;
+      font-size: 24px;
+      font-family: 'Raleway', Arial, sans-serif;
+      color: rgb(178, 195, 200);
+    }
+    .accent a {
+      /* Styles back-to-top link (if enabled) */
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .accent a:hover {
+      /* Hover effect for back-to-top link */
+      text-decoration: underline;
+    }
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        background-color:  rgb(49, 72, 79);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 24px;
+        margin: 20px;
+        border-radius: 10px;
+        min-height: 235px;
+    }
+    .textbox {
+      width: 1000px;
+      min-height: 200px; 
+      position: absolute;
+      left: 54px;
+      top: 70px;
+    }
+    .certImg1 {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .boatImg {
+      width: 340px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .calcImg {
+      width: 160px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .daoImg {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .museImg {
+      width: 210px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .zoogImg {
+      width: 230px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .compImg {
+      width: 350px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    } 
+    .certImg1:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .boatImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .calcImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .daoImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .museImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .zoogImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .compImg:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    hr.lineStyle {
+      border-top: 1px solid rgb(171, 194, 201);   /* Set the color */
+    }
+  </style>
+    <title>Mo Spiegel | Portfolio</title>
+</head>
+<body>
+    <!-- Main container for your webpage -->
+    <div class="page-container">
+        <!-- <header> for site title or logo (edit the <h1> text) -->
+        <header>
+            <h1>pRoGRAmminG </h1>
+            <p> </p>
+            <sub>Python | Java (Processing)</sub>
+        </header>
+        <!-- <nav> for navigation links (edit or add <a> tags) -->
+        <nav>
+            <a href="darkMain.html">Home</a>
+            <a href="darkProgramming.html">Programming</a>
+            <a href="Programming.html">Light Mode</a>
+        </nav>
+        <!-- <main> for main content. Replace or add text, images, lists, etc. -->
+        <main> 
+        <h2>ceRtificAtions</h2>
+          <div class = "card">
+            <h3 style = "font-weight: bold;">Computer Programming 1 State Certification</h3>
+            <div class = "textbox">
+              <ul>
+                  <li>Administered by YouScience</li>
+                  <li>Scored 100%</li>
+              </ul>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/images/Mo%20Spiegel_Computer%20Programming%201_01092026.pdf" download>
+                <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Certification.png?raw=true" class = "certImg1">
+            </a>
+          </div>
+          <br>
+          <p> </p>
+          <div class = "card">
+            <h3 style = "font-weight: bold;">Programming 2 Python State Certification</h3>
+            <div class = "textbox">
+              <ul>
+                  <li>Administered by YouScience</li>
+                  <li>Scored 95.24%</li>
+              </ul>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/images/Mo%20Spiegel_Computer%20Programming%202%20Python_05192026.pdf" download>
+                <img src = "https://github.com/Mo59471/portfolio/blob/main/images/PythonCertification.png?raw=true" class = "certImg1">
+            </a>
+          </div>
+          <br>
+          <p> </p>
+        <hr class = "lineStyle">
+        <h2>pRojects</h2>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Relativistic Boat (2026)</h3>
+            <div class = "textbox">
+                <p2>Relativstic Boat is an interactive, graphical simulator that visualizes the relativistic phenomena of time dilation and Lorentz contraction for a moving sailboat (chosen for artistic appeal). The program calculates the relativstically altered time and length intervals for the moving boat given an inputted user velocity, which can be adjusted on a slider or typed in manually. The program's architecture features an object-oriented design, with 5 classes for checkboxes, buttons, clocks, the boat, and the slider. Advanced data types and programming techniques are used, including dictionaries to store class object data, lists to instantiate classes, an event detection loop, time tracking with Pygame's Clock object, string manipulation, etc.</p2>
+            </div>
+            <a href="https://github.com/Mo59471/RelativisticBoats">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/RBoats.png?raw=true" class = "boatImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Graphical Calculator (2025)</h3>
+            <div class = "textbox">
+                <p2>This project is an object-oriented graphical calculator programmed in Java using the Processing IDE. It features a custom-designed interface with a numeric keypad, operation buttons, and a live display area. All buttons are created using a custom Button class that handles their visuals, hover effects, and click detection. The calculator supports basic operations like addition, subtraction, multiplication, and division, as well as advanced functions such as exponentiation, natural logarithm, square root, factorial, sign toggle, and decimal input. It uses two operands (l and r) with a boolean flag to track which is being edited, while the current value is shown through the dVal display variable. Calculations are handled in the performCalculation() method, which also validates special cases like factorials and logarithms.</p2>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/tree/main/src/Calculator">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/calc.png?raw=true" class = "calcImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Daoist Pharmaceutical (2026)</h3>
+            <div class = "textbox">
+                <p2>Daoist Pharmaceutical is a group project in Python, using Pygame, contributed to by myself, Ethan Tang, Simon Sakata, and Kai Yun Chao. This project is an object-oriented tycoon-style game where the player takes the role of the son of the mythological Jade Emperor, sent down to Asia to cure diseases using traditional oriental medicines. The project features random disease spawning and curing, resource spawning and extraction, disease growth, a reputation system that determines victory, incremental difficulty over year timespans, a plethora of purchasable medicines that effect different symptoms, etc. The project utilizes dictionaries, lists, pixel scanning, event detection, complex graphics implementations, etc. I largely contributed to the game UI, Disease class logic, and the Button class.</p2>
+            </div>
+            <a href="https://github.com/Kai535813/--Daoist-Pharmaceutical">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Daoist.png?raw=true" class = "daoImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Musikhelfer (2025)</h3>
+            <div class = "textbox">
+                <p2>Musikhelfer is a group project contributed to by myself, Ethan Tang, Simon Sakata, Kai Yun Chao, and Aristotle Stokes. The project is an object-oriented music utility app coded in Java with the Processing IDE, and contains an ear-trainer, tuner, metronome, and auto-harmonizer. I coded the Note class, which allows users to place notes on the score for the auto-harmonizer, as well as the playback functionality and button logic for buttons involved with the auto-harmonizer. This required the use of advanced programming techniques, including array lists, mouse detection and event tracking, screen management via case statements, etc.</p2>
+            </div>
+            <a href="https://github.com/Kai535813/Musikhelfer">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/Musikhelfer.png?raw=true" class = "museImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">ZOOG (2025)</h3>
+            <div class = "textbox">
+                <p2>ZOOG is an interactive digital artwork, coded in Java, in the Processing environment. The project uses mouse position detection to draw a set of "ZOOG" sprites following the user's cursor, with dynamic colors that are transformations of the user's mouse position. As such, users are able to draw ZOOG sprites across the screen that shift through the RGB spectrum. This project highlights user interaction, programmical rendering, RGB manipulation, and graphical techniques.</p2>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/src/ZOOG/ZOOG.pde">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/ZOOG.png?raw=true" class = "zoogImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        <div class = "card">
+            <h3 style = "font-weight: bold;">Historic Computer Systems Timeline (2025)</h3>
+            <div class = "textbox">
+                <p2>This project is an interactive timeline that shows the evolution of computers over time. Users can hover over nodes on the timeline to view information about specific historic systems, including the Atanasoff-Berry Computer, ENIAC, Atlas, Apple 1, and more. This project was created in Java in the Processing environment, and utilizes layered, programmic drawing of elements in addition to mouse tracking and hitbox strategies.</p2>
+            </div>
+            <a href="https://github.com/Mo59471/portfolio/blob/main/src/Computer%20Timeline/Computer_Timeline.pde">
+              <img src = "https://github.com/Mo59471/portfolio/blob/main/images/ComputerTimeline.png?raw=true" class = "compImg">
+            </a>
+        </div>
+        <br>
+        <p> </p>
+        </main>
+        <!-- <footer> for copyright or contact info (edit the text) -->
+        <footer>
+            <p>© 2026 Mo Spiegel</p>
+        </footer>
+        <!-- Accent: Decorative circle. Remove this <div>, change its shape (edit CSS), or add content (e.g., <a> or <img>) -->
+        <div class="accent"></div>
+    </div>
+</body>
+</html>
+  
